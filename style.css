@@ -1,16 +1,61 @@
+:root {
+    --divNumber: 4;
+}
+
 body {
-    margin: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    border-bottom: black solid;
+    margin: 2%;
+}
+
+#interface {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+}
+
+#controls {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+button {
+    border: black solid;
+    background-color: white;
+    padding: 5%;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #container {
     display: grid;
-    width: 50vw;
-    height: 50vw;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    width: 30vw;
+    height: 30vw;
+    grid-template-columns: repeat(var(--divNumber), 1fr);
+    grid-template-rows: repeat(var(--divNumber), 1fr);
 }
 
 #container > div {
     border: 1px black solid;
+}
+
+footer {
+    border-top: black solid;
+    margin: 2%;
+    line-height: 2;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 
