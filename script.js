@@ -30,6 +30,7 @@ function createGrid() {
     }
 }
 
+//Delete old grid
 function deleteGrid() {
     for (let i = 0; i < totalDivs; i++) {
         const sketchPad = document.querySelector('.sketchDiv');
@@ -58,6 +59,7 @@ function reset() {
     });
 }
 
+//Combine all of the functions
 function playSketch() {
     createGrid();
     sketch();
