@@ -13,7 +13,12 @@ setDivNumber.addEventListener('click', () => {
 //Make new grid
 function newGrid() {
     deleteGrid();
-    divSideNumber = prompt('How many squares would you like on each side?');
+    divSideNumber = prompt('How many squares would you like on each side? Max: 100');
+    if (divSideNumber > 100) {
+        alert('Maximum is 100.');
+        divSideNumber = 100;
+    } else {
+    }
     playSketch();
 }
 
