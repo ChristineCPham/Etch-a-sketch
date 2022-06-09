@@ -49,12 +49,22 @@ Users should be able to:
 
 ### What I learned
 
-
+I learned how to add the event listener that would allow users to 'sketch' on the sketch pad.
 
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const divs = document.querySelectorAll('.sketchDiv');
+
+divs.forEach((div) => {
+   div.addEventListener('mouseenter', () => {
+       div.style['background-color'] = 'pink';
+   });
+});
+```
+
+I also learned how to add a CSS variable using JavaScript.
+
+```js
+root.style.setProperty('--divNumber',   divSideNumber);
 ```
 
 ### Continued development
